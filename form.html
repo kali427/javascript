@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+
+</head>
+<body>
+    <form >
+        <h1>Hello!</h1>
+        <input type="text" autofocus id="name">
+        <input type="submit">
+    </form>
+
+
+    <script>
+        document.querySelector('form').onsubmit = hello;
+        function hello(){
+            const name = document.querySelector('#name').value;
+            document.querySelector('h1').innerHTML = `Hello ${name}!`
+        }
+    </script>
+
+
+</body>
+</html>
